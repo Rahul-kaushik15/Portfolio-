@@ -8,7 +8,46 @@ Designed to impress recruiters and clients with clean architecture, performance-
 🌐 Live Demo
 https://portfolio-ten-eta-dgiw3yl9gl.vercel.app/
 
-##screenshot
+## 📸 Project Screenshots
+
+### 🏠 Home Section
+![Home](src/screenshots/home.png)
+
+---
+
+### 👨‍💻 About Section
+![About](src/screenshots/about.png)
+
+---
+
+### 🛠️ Skills Section
+![Skills](src/screenshots/skills.png)
+
+---
+
+### 🎬 Movie App Project
+![Movie App](src/screenshots/movie.png)
+
+---
+
+### 🎨 Refokus Clone
+![Refokus Clone](src/screenshots/refokus.png)
+
+---
+
+### 🏢 Obys Agency Clone
+![Obys Agency](src/screenshots/obys-agency.png)
+
+---
+
+### 📩 Contact Section
+![Contact](src/screenshots/contact.png)
+
+---
+
+### 🔻 Footer
+![Footer](src/screenshots/footer.png)
+
 
 
 
