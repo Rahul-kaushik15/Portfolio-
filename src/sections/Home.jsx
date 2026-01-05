@@ -135,7 +135,7 @@ const Home = () => {
                 View My Work
               </a>
               <a
-                href="/Rahul_Frontend_developer.pdf"
+                href="/Rahul_Frontend_developer.docx.pdf"
                 download
                 className="px-4 py-2 rounded-full text-black bg-white hover:bg-gray-300 shadow-lg hover:scale-105"
               >
