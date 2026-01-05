@@ -8,9 +8,12 @@ import Astra from '../assets/Astra.png';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+  const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+
+
+
 
   const [formData, setFormData] = useState({
     name: '',
