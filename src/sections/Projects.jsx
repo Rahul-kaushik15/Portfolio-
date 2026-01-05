@@ -1,6 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 
 import Movie from "../assets/Movie.png"
+import refokus from "../assets/refokus.png"
+import ObysAgency from "../assets/obys-agency.png"
+import ObysAgency2 from "../assets/Obys-Agency2.png"
 
 import {motion,  AnimatePresence, useMotionValueEvent, useScroll } from 'framer-motion'
 const useIsMobile = (query =  "(max-width : 639px)") =>  {
@@ -31,10 +34,24 @@ const Projects = () => {
         title: "Movie",
         link: "https://scsdb-movie-app-kjyw.vercel.app/",
         bgColor: "#111111 ",
-        image: isMobile ? "" : Movie,
+        image: Movie,
       },
+      {
+        title: "Refokus Clone",
+        link: "https://refokus-clone-mu-five.vercel.app/",
+        bgColor: "#222222",
+        image: refokus
+      },
+
+      {
+        title:"Obys Agency",
+        link: "http://obys-agency-com.netlify.app/",
+        bgColor: "#111111", // Corrected variable name
+        image: isMobile ? ObysAgency : ObysAgency2,
+
+      }
     ],
-    [isMobile] // re-run only when `isMobile` changes
+    [isMobile] // re-run only when `isMobile` chan`ges
   );
 
   const {scrollYProgress} = useScroll({
@@ -46,7 +63,7 @@ const Projects = () => {
 
   useMotionValueEvent(scrollYProgress, "change", (v)=> {
     const idx = thresholds.findIndex((t) => v <= t);
-    setActiveIndex(idx === 1 ? thresholds.length -1 : idx)
+    setActiveIndex(idx === -1 ? thresholds.length -1 : idx)
   })
   const activeProject = projects[ActiveIndex]
 
